@@ -34,3 +34,5 @@ s.resources = "CCBotManager/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 # 10
 s.swift_version = "5.0"
+
+end
