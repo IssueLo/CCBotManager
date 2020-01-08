@@ -32,7 +32,7 @@ s.source_files = "CCBotManager/**/*.{swift}"
 # 9
 # s.resources = "CCBotManager/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 s.resource_bundles = {
- 'ThisIsATestBundle' => ['CCBotManager/Assets/*.xcassets']
+ 'CCBotManager' => ['CCBotManager/*.xcassets']
 }
 
 # 10

@@ -40,8 +40,13 @@ public class CCBotButton: UIButton {
         }
     }
     
+    public static var imageBundle: Bundle {
+        let path = Bundle(for: CCBotButton.self).resourcePath! + "CCBotManager.bundle"
+        return Bundle(path: path)!
+    }
+    
     private func buttonImage(_ name: String = "iconUdnMember") {
-        self.setImage(UIImage(named: name), for: .normal)
+        self.setImage(UIImage(named: name, in: CCBotButton.imageBundle, compatibleWith: nil) , for: .normal)
         self.imageView?.contentMode = .scaleAspectFill
     }
     
