@@ -25,6 +25,7 @@ s.source = { :git => "https://github.com/IssueLo/CCBotManager.git",
 
 # 7
 s.framework = "UIKit", "WebKit"
+s.dependency 'SDWebImage'
 
 # 8
 s.source_files = "CCBotManager/**/*.{swift,h}"
