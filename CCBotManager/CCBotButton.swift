@@ -57,7 +57,7 @@ public class CCBotButton: UIButton {
     private func buttonImage() {
 //        self.setImage(UIImage(named , for: .normal)
         self.sd_setImage(with: iconURL, for: .normal, completed: nil)
-        self.imageView?.contentMode = .scaleAspectFill
+        self.imageView?.contentMode = .scaleAspectFit
     }
     
     private func setAction() {
