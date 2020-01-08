@@ -15,7 +15,7 @@ public class CCBotButton: UIButton {
     var bottomSpace: CGFloat
     var iconURL: URL?
     
-    public required init(belongVC: UIViewController, bottomSpace: CGFloat = 50, iconURLString: String = "https://i.imgur.com/Pc1KdHw.png") {
+    public required init(belongVC: UIViewController, bottomSpace: CGFloat = 50, iconURLString: String = "https://images.vexels.com/media/users/3/130230/isolated/lists/2302d56853dcfc32c54683fec1305550-facebook-bubble-icon.png") {
         self.superVC = belongVC
         self.bottomSpace = bottomSpace
         self.iconURL = URL(string: iconURLString) ?? nil
@@ -41,6 +41,7 @@ public class CCBotButton: UIButton {
             self.bottomAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.bottomAnchor, constant: -self.bottomSpace).isActive = true
             self.trailingAnchor.constraint(equalTo: superView.trailingAnchor, constant: 0).isActive = true
             self.widthAnchor.constraint(equalToConstant: 50).isActive = true
+            self.heightAnchor.constraint(equalToConstant: 50).isActive = true
         }
     }
     
