@@ -40,6 +40,7 @@ public class CCBotButton: UIButton {
             superView.addSubview(self)
             self.bottomAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.bottomAnchor, constant: -self.bottomSpace).isActive = true
             self.trailingAnchor.constraint(equalTo: superView.trailingAnchor, constant: 0).isActive = true
+            self.widthAnchor.constraint(equalToConstant: 50).isActive = true
         }
     }
     
