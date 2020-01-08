@@ -27,13 +27,11 @@ s.source = { :git => "https://github.com/IssueLo/CCBotManager.git",
 s.framework = "UIKit", "WebKit"
 
 # 8
-s.source_files = "CCBotManager/**/*.{swift}"
+s.source_files = "CCBotManager/**/*.{swift,h}"
 
 # 9
 # s.resources = "CCBotManager/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-s.resource_bundles = {
- 'CCBotManager' => ['CCBotManager/*.xcassets']
-}
+# s.resource_bundles = { 'CCBotManager' => ['CCBotManager/*.xcassets'] }
 
 # 10
 s.swift_version = "5.0"
