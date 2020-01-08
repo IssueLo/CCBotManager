@@ -40,8 +40,8 @@ public class CCBotButton: UIButton {
             superView.addSubview(self)
             self.bottomAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.bottomAnchor, constant: -self.bottomSpace).isActive = true
             self.trailingAnchor.constraint(equalTo: superView.trailingAnchor, constant: 0).isActive = true
-            self.widthAnchor.constraint(equalToConstant: 20).isActive = true
-            self.heightAnchor.constraint(equalToConstant: 20).isActive = true
+            self.widthAnchor.constraint(equalToConstant: 44).isActive = true
+            self.heightAnchor.constraint(equalToConstant: 44).isActive = true
         }
     }
     
@@ -57,7 +57,7 @@ public class CCBotButton: UIButton {
     
     private func buttonImage() {
 //        self.setImage(UIImage(named , for: .normal)
-//        self.sd_setImage(with: iconURL, for: .normal, completed: nil)
+        self.sd_setImage(with: iconURL, for: .normal, completed: nil)
         self.backgroundColor = .gray
         self.imageView?.contentMode = .scaleAspectFit
     }
