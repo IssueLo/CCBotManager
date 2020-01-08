@@ -54,3 +54,11 @@ public class CCBotButton: UIButton {
         superVC.present(CCBotViewController.shared, animated: true, completion: nil)
     }
 }
+
+fileprivate class ThisClass {}
+
+public struct Resources {
+    public static var bundle: Bundle {
+        return Bundle(for: ThisClass.self)
+    }
+}

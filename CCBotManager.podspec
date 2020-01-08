@@ -30,7 +30,10 @@ s.framework = "UIKit", "WebKit"
 s.source_files = "CCBotManager/**/*.{swift}"
 
 # 9
-s.resources = "CCBotManager/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+# s.resources = "CCBotManager/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+s.resource_bundles = {
+ 'ThisIsATestBundle' => ['CCBotManager/Assets/*.xcassets']
+}
 
 # 10
 s.swift_version = "5.0"
