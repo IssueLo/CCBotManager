@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06A783DD0DF54289BBEE3B5E /* Pods_CCBotManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80946D9AB17F1FCC8BC4A9C8 /* Pods_CCBotManager.framework */; };
 		40ECFD1923C48660009DED04 /* CCBotManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 40ECFD1723C48660009DED04 /* CCBotManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40ECFD2023C486A0009DED04 /* CCBotButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ECFD1F23C486A0009DED04 /* CCBotButton.swift */; };
 		40ECFD2223C486CA009DED04 /* CCBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ECFD2123C486CA009DED04 /* CCBotViewController.swift */; };
@@ -20,6 +21,9 @@
 		40ECFD1F23C486A0009DED04 /* CCBotButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBotButton.swift; sourceTree = "<group>"; };
 		40ECFD2123C486CA009DED04 /* CCBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBotViewController.swift; sourceTree = "<group>"; };
 		40ECFD2423C48B63009DED04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B1EE8F8FBB43D712D13DCE6 /* Pods-CCBotManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCBotManager.release.xcconfig"; path = "Target Support Files/Pods-CCBotManager/Pods-CCBotManager.release.xcconfig"; sourceTree = "<group>"; };
+		574D4E95838208B6EECFFEF4 /* Pods-CCBotManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCBotManager.debug.xcconfig"; path = "Target Support Files/Pods-CCBotManager/Pods-CCBotManager.debug.xcconfig"; sourceTree = "<group>"; };
+		80946D9AB17F1FCC8BC4A9C8 /* Pods_CCBotManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCBotManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A783DD0DF54289BBEE3B5E /* Pods_CCBotManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360BE7FB89DD0C8574C96366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				574D4E95838208B6EECFFEF4 /* Pods-CCBotManager.debug.xcconfig */,
+				4B1EE8F8FBB43D712D13DCE6 /* Pods-CCBotManager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		40ECFD0A23C48660009DED04 = {
 			isa = PBXGroup;
 			children = (
 				40ECFD1623C48660009DED04 /* CCBotManager */,
 				40ECFD1523C48660009DED04 /* Products */,
+				360BE7FB89DD0C8574C96366 /* Pods */,
+				A500B26F8409C5B1F9C5D661 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +77,14 @@
 			path = CCBotManager;
 			sourceTree = "<group>";
 		};
+		A500B26F8409C5B1F9C5D661 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80946D9AB17F1FCC8BC4A9C8 /* Pods_CCBotManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -79,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40ECFD1C23C48660009DED04 /* Build configuration list for PBXNativeTarget "CCBotManager" */;
 			buildPhases = (
+				B6ED9EC85BBF41D7358004FF /* [CP] Check Pods Manifest.lock */,
 				40ECFD0F23C48660009DED04 /* Headers */,
 				40ECFD1023C48660009DED04 /* Sources */,
 				40ECFD1123C48660009DED04 /* Frameworks */,
@@ -136,6 +161,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6ED9EC85BBF41D7358004FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCBotManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40ECFD1023C48660009DED04 /* Sources */ = {
@@ -272,6 +322,7 @@
 		};
 		40ECFD1D23C48660009DED04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574D4E95838208B6EECFFEF4 /* Pods-CCBotManager.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +348,7 @@
 		};
 		40ECFD1E23C48660009DED04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1EE8F8FBB43D712D13DCE6 /* Pods-CCBotManager.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

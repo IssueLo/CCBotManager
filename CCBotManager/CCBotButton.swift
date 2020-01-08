@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import SDWebImage
 
 public class CCBotButton: UIButton {
     
     var superVC: UIViewController
     var bottomSpace: CGFloat
+    var iconURL: URL?
     
-    public required init(belongVC: UIViewController, bottomSpace: CGFloat = 50) {
+    public required init(belongVC: UIViewController, bottomSpace: CGFloat = 50, iconURLString: String = "https://i.imgur.com/Pc1KdHw.png") {
         self.superVC = belongVC
         self.bottomSpace = bottomSpace
+        self.iconURL = URL(string: iconURLString) ?? nil
         
         super.init(frame: .zero)
     }
@@ -40,13 +43,19 @@ public class CCBotButton: UIButton {
         }
     }
     
-    public static var imageBundle: Bundle {
-        let path = Bundle(for: CCBotButton.self).resourcePath! // + "CCBotManager.bundle"
-        return Bundle(path: path)!
-    }
+//    public static var imageBundle: Bundle {
+//        let path = Bundle(for: CCBotButton.self).resourcePath! // + "CCBotManager.bundle"
+//        return Bundle(path: path)!
+//    }
+//
+//    private func buttonImage(_ name: String = "iconUdnMember") {
+//        self.setImage(UIImage(named: name, in: CCBotButton.imageBundle, compatibleWith: nil) , for: .normal)
+//        self.imageView?.contentMode = .scaleAspectFill
+//    }
     
-    private func buttonImage(_ name: String = "iconUdnMember") {
-        self.setImage(UIImage(named: name, in: CCBotButton.imageBundle, compatibleWith: nil) , for: .normal)
+    private func buttonImage() {
+//        self.setImage(UIImage(named , for: .normal)
+        self.sd_setImage(with: iconURL, for: .normal, completed: nil)
         self.imageView?.contentMode = .scaleAspectFill
     }
     
