@@ -41,7 +41,7 @@ public class CCBotButton: UIButton {
     }
     
     public static var imageBundle: Bundle {
-        let path = Bundle(for: CCBotButton.self).resourcePath! + "CCBotManager.bundle"
+        let path = Bundle(for: CCBotButton.self).resourcePath! // + "CCBotManager.bundle"
         return Bundle(path: path)!
     }
     
