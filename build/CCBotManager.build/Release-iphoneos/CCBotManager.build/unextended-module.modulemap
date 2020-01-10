@@ -1,0 +1,10 @@
+framework module CCBotManager {
+  umbrella header "CCBotManager.h"
+
+  export *
+  module * { export * }
+}
+
+module CCBotManager.__Swift {
+    exclude header "CCBotManager-Swift.h"
+}

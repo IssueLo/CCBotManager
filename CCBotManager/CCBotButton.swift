@@ -9,12 +9,18 @@
 import UIKit
 import SDWebImage
 
+/// 製作出機器人按鍵
 public class CCBotButton: UIButton {
     
     var superVC: UIViewController
     var bottomSpace: CGFloat
     var iconURL: URL?
     
+    /// Deeee
+    /// - Parameters:
+    ///   - belongVC: vc
+    ///   - bottomSpace: bottomSpece
+    ///   - iconURLString: dddd
     public required init(belongVC: UIViewController, bottomSpace: CGFloat = 50, iconURLString: String = "https://lh3.googleusercontent.com/7hNVq4eXYDqKikz_x6QUIN1x3ArrF3IzcaNWS6TQpna79BIWfNfnRviifT6hBugE7mYpKpiM7Ps7YN5XkGFmXaTyTKjiYsUoNquxGvQ=h128") {
         self.superVC = belongVC
         self.bottomSpace = bottomSpace
@@ -27,12 +33,15 @@ public class CCBotButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// 333
     public func build() {
         setAutoLayout(into: superVC.view)
         buttonImage()
         setAction()
     }
     
+    /// 123
+    /// - Parameter superView: 333
     private func setAutoLayout(into superView: UIView?) {
         self.translatesAutoresizingMaskIntoConstraints = false
         
@@ -56,7 +65,7 @@ public class CCBotButton: UIButton {
 //    }
     
     private func buttonImage() {
-//        self.setImage(UIImage(named , for: .normal)
+    //        self.setImage(UIImage(named , for: .normal)
         self.sd_setImage(with: iconURL, for: .normal, completed: nil)
         self.backgroundColor = .gray
         self.imageView?.contentMode = .scaleAspectFit

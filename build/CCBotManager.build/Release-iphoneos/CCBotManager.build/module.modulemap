@@ -1,0 +1,11 @@
+framework module CCBotManager {
+  umbrella header "CCBotManager.h"
+
+  export *
+  module * { export * }
+}
+
+module CCBotManager.Swift {
+    header "CCBotManager-Swift.h"
+    requires objc
+}

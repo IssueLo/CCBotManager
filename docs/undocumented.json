@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Kevin/CodePractice/CCBotManager/CCBotManager/CCBotButton.swift",
+      "line": 86,
+      "symbol": "Resources",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/CodePractice/CCBotManager/CCBotManager/CCBotButton.swift",
+      "line": 87,
+      "symbol": "Resources.bundle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/CodePractice/CCBotManager/CCBotManager/CCBotViewController.swift",
+      "line": 12,
+      "symbol": "CCBotViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/CodePractice/CCBotManager/CCBotManager/CCBotViewController.swift",
+      "line": 14,
+      "symbol": "CCBotViewController.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/CodePractice/CCBotManager/CCBotManager/CCBotViewController.swift",
+      "line": 17,
+      "symbol": "CCBotViewController.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Kevin/CodePractice/CCBotManager/CCBotManager/CCBotViewController.swift",
+      "line": 19,
+      "symbol": "CCBotViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Kevin/CodePractice/CCBotManager"
+}

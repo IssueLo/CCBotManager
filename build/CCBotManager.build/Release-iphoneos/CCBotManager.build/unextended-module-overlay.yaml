@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/Kevin/CodePractice/CCBotManager/build/Release-iphoneos/CCBotManager.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/Kevin/CodePractice/CCBotManager/build/CCBotManager.build/Release-iphoneos/CCBotManager.build/unextended-module.modulemap",
+    }]
+  }]
+}
